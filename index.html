@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Materials -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="modulepreload" href="/assets/vendor.4c973a13.js">
+    <link rel="stylesheet" href="/assets/index.fcdbc22a.css">
+    <meta charset="utf-8">
+    <title>Responsive Dashboard</title>
+</head>
+
+<body>
+    <div class="w-full min-h-screen flex">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.png">
+                    <h2 style="font-size: 19px;">WEB<span class="danger">SITE</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="index.html" class="active">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="project.html">
+                    <span class="material-icons-sharp">task</span>
+                    <h3>Projects</h3>
+                </a>
+                <a href="member.html">
+                    <span class="material-icons-sharp">people</span>
+                    <h3>Team Members</h3>
+                </a>
+                <a href="login.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- END OF ASIDE -->
+        <main class="flex-1 pb-8">
+            <div class="flex items-center justify-between py-7 px-10">
+                <div>
+                    <h1 class="text-2xl font-semibold leading-relaxed text-gray-800">Products</h1>
+                    <p class="text-sm font-medium text-gray-500"> Let's grow to your business! Create your product
+                        and upload here </p>
+                </div><button
+                    class="inline-flex gap-x-2 items-center py-2.5 px-6 text-white bg-indigo-600 rounded-xl hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1"><svg
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 h-6 fill-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg><span class="text-sm font-semibold tracking-wide">Create Item</span></button>
+
+                <button id="menu-btn">
+
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Name</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/profile.png">
+                    </div>
+                </div>
+
+
+            </div>
+            <ul class="flex gap-x-24 items-center px-4 border-y border-gray-200">
+                <li><button
+                        class="flex gap-x-2 items-center py-5 px-6 text-gray-500 hover:text-indigo-600 relative group"><svg
+                            width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-6 fill-current">
+                            <path
+                                d="m12.934 16.072 6.426-5.115.158-.126a1.5 1.5 0 0 0 .003-2.35l-6.587-5.238a1.5 1.5 0 0 0-1.868 0L4.475 8.485a1.5 1.5 0 0 0-.001 2.347l.156.124 6.436 5.117a1.5 1.5 0 0 0 1.868 0Z">
+                            </path>
+                            <path opacity=".3" clip-rule="evenodd"
+                                d="m11.056 18.67-5.72-4.547a.903.903 0 0 0-1.276.154.91.91 0 0 0 .166 1.279l6.861 5.247a1.5 1.5 0 0 0 1.823 0l6.858-5.243a.915.915 0 0 0 .171-1.283l-.004-.005a.91.91 0 0 0-1.278-.162l-.008.007-5.726 4.553a1.5 1.5 0 0 1-1.867 0Z">
+                            </path>
+                        </svg><span class="font-medium">Published</span><span
+                            class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out"></span></button>
+                </li>
+                <li><button
+                        class="flex gap-x-2 items-center py-5 px-6 text-gray-500 hover:text-indigo-600 relative group"><svg
+                            width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-6 fill-current">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22 14v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4h4.28l.543 1.633A2 2 0 0 0 8.721 17h6.661a2 2 0 0 0 1.789-1.106L18.118 14H22Z"
+                                fill="currentColor"></path>
+                            <path opacity=".3" fill-rule="evenodd" clip-rule="evenodd"
+                                d="m2.563 12 3.364-5.98A2 2 0 0 1 7.67 5h8.66a2 2 0 0 1 1.744 1.02L21.436 12h-3.319a2 2 0 0 0-1.789 1.106L15.382 15H8.721l-.544-1.633A2 2 0 0 0 6.279 12H2.563Z"
+                                fill="currentColor"></path>
+                        </svg><span class="font-medium">Draft</span><span
+                            class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out"></span></button>
+                </li>
+                <li><button
+                        class="flex gap-x-2 items-center py-5 px-6 text-gray-500 hover:text-indigo-600 relative group"><svg
+                            width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-6 fill-current">
+                            <path
+                                d="M19.208 9.848C20.33 11.018 21 12 21 12s-4.091 6-9 6c-.31 0-.612-.014-.905-.04l8.113-8.112ZM14.505 6.495 12 9a3 3 0 0 0-3 3l-3.473 3.473C3.75 13.833 3 12 3 12s2.455-6 9-6c.867 0 1.708.187 2.505.495Z"
+                                fill="currentColor"></path>
+                            <path opacity=".3" d="M18.535 5 5.1 18.435l1.414 1.414L19.95 6.414 18.535 5Z"
+                                fill="currentColor"></path>
+                        </svg><span class="font-medium">Hidden</span><span
+                            class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out"></span></button>
+                </li>
+                <li><button
+                        class="flex gap-x-2 items-center py-5 px-6 text-gray-500 hover:text-indigo-600 relative group"><svg
+                            width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-6 fill-current">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15 16V7l-1.153-.384A12 12 0 0 0 10.053 6H6.459a3 3 0 0 0-2.941 2.412l-.75 3.746a3 3 0 0 0 3.142 3.581L9.5 15.5l-.364 4.006A1.37 1.37 0 0 0 10.5 21a2.65 2.65 0 0 0 2.272-1.286L15 16Z"
+                                fill="currentColor"></path>
+                            <path opacity=".3"
+                                d="M18 17h3a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z"
+                                fill="currentColor"></path>
+                        </svg><span class="font-medium">Rejected</span><span
+                            class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out"></span></button>
+                </li>
+                <li><button
+                        class="flex gap-x-2 items-center py-5 px-6 text-gray-500 hover:text-indigo-600 relative group"><svg
+                            width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-6 fill-current">
+                            <path opacity=".3" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.857 13c.093-.278.143-.574.143-.881V6.881C15 5.29 13.657 4 12 4h-.273C10.221 4 9 5.173 9 6.619h1.09c0-.868.733-1.571 1.637-1.571H12c1.054 0 1.91.82 1.91 1.833v5.238c0 .32-.086.62-.235.881h-3.35a1.768 1.768 0 0 1-.234-.881V9.5c0-.434.366-.786.818-.786.452 0 .818.352.818.786v1.833h1.091V9.5c0-1.013-.854-1.833-1.909-1.833C9.855 7.667 9 8.487 9 9.5v2.619c0 .307.05.603.143.881H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-3.143Z"
+                                fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9 10.333v1.786C9 13.71 10.343 15 12 15s3-1.29 3-2.881v-1.786l5.207-3.76a.5.5 0 0 1 .793.405V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6.978a.5.5 0 0 1 .793-.405L9 10.333Zm1.09.788L12 12.5l1.91-1.379v.998c0 1.013-.856 1.833-1.91 1.833-1.054 0-1.91-.82-1.91-1.833v-.998Z"
+                                fill="currentColor"></path>
+                        </svg><span class="font-medium">Under Review</span><span
+                            class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out"></span></button>
+                </li>
+            </ul>
+            <table class="w-full border-b border-gray-200">
+                <thead>
+                    <tr class="text-sm font-medium text-gray-700 border-b border-gray-200">
+                        <td class="pl-10">
+                            <div class="flex items-center gap-x-4"><input type="checkbox"
+                                    class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"><span>Product
+                                    Name</span></div>
+                        </td>
+                        <td class="py-4 px-4 text-center">Pricing</td>
+                        <td class="py-4 px-4 text-center">Project</td>
+                        <td class="py-4 px-4 text-center">Rating</td>
+                        <td class="py-4 px-4 text-center">Platforms</td>
+                        <td class="py-4 pr-10 pl-4 text-center"><svg width="24" height="24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5 4h14a.5.5 0 0 1 .4.8L14 12v8.191a.5.5 0 0 1-.724.447L10 19v-7L4.6 4.8A.5.5 0 0 1 5 4Z"
+                                    fill="currentColor"></path>
+                            </svg></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-100 transition-colors group">
+                        <td class="flex gap-x-4 items-center py-4 pl-10"><input type="checkbox"
+                                class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"><img
+                                src="D:\Avllo\TailWind Css\img\organic-landing-page.png" alt=""
+                                class="w-40 aspect-[3/2] rounded-lg object-cover object-top border border-gray-200">
+                            <div><a href="#" class="text-lg font-semibold text-gray-700">Organic Landing page</a>
+                                <div class="font-medium text-gray-400">Web Design</div>
+                            </div>
+                        </td>
+                        <td class="font-medium text-center">$20</td>
+                        <td class="font-medium text-center">793</td>
+                        <td class="text-center"><span class="font-medium">4.9</span><span
+                                class="text-gray-400">/5</span></td>
+                        <td>
+                            <div class="flex gap-x-2 justify-center items-center"><a href="#"
+                                    class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                                        <path d="M21.333 21.333a5.333 5.333 0 1 0 0-10.666 5.333 5.333 0 0 0 0 10.666Z"
+                                            fill="#19BCFE"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 32A5.333 5.333 0 0 0 16 26.667v-5.334h-5.333a5.333 5.333 0 1 0 0 10.667Z"
+                                            fill="#09CF83"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 21.333H16V10.667h-5.333a5.333 5.333 0 1 0 0 10.666Z"
+                                            fill="#A259FF"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 10.667H16V0h-5.333a5.333 5.333 0 1 0 0 10.667Z" fill="#F24E1E">
+                                        </path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.333 10.667H16V0h5.333a5.333 5.333 0 1 1 0 10.667Z" fill="#FF7262">
+                                        </path>
+                                    </svg></a><a href="#" class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg
+                                        viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6">
+                                        <path d="M8.109 4.26 16 3.433l7.891.828L30 12.4 16 28.567 2 12.4l6.109-8.14Z"
+                                            fill="#FDB300"></path>
+                                        <path
+                                            d="M7.671 12.395 16 28.567 2 12.395h5.671ZM24.329 12.395 16 28.567l14-16.172h-5.671Z"
+                                            fill="#EA6C00"></path>
+                                        <path d="M7.671 12.395h16.658L16 28.567 7.671 12.395Z" fill="#FDAD00">
+                                        </path>
+                                        <path
+                                            d="m16 3.433-7.891.827-.438 8.135L16 3.433ZM16 3.433l7.891.827.438 8.135L16 3.433Z"
+                                            fill="#FDD231"></path>
+                                        <path
+                                            d="M30 12.395 23.891 4.26l.438 8.135H30ZM2 12.395 8.109 4.26l-.438 8.135H2Z"
+                                            fill="#FDAD00"></path>
+                                        <path d="m16 3.433-8.329 8.962h16.658L16 3.433Z" fill="#FEEEB7"></path>
+                                    </svg></a></div>
+                        </td>
+                        <td><span class="inline-block w-20 group-hover:hidden">12/01/22</span>
+                            <div
+                                class="hidden group-hover:flex group-hover:w-20 group-hover:items-center group-hover:text-gray-500 group-hover:gap-x-2">
+                                <button class="p-2 hover:rounded-md hover:bg-gray-200"><svg width="24" height="24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
+                                        <path
+                                            d="m19.925 8.44-8.449 8.448a1.5 1.5 0 0 1-1.075.44l-3.523-.035a1.5 1.5 0 0 1-1.485-1.463l-.086-3.427a1.5 1.5 0 0 1 .439-1.098l8.522-8.522a1.5 1.5 0 0 1 2.121 0l3.536 3.535a1.5 1.5 0 0 1 0 2.121Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" d="M19 20H6a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2Z"
+                                            fill="currentColor"></path>
+                                    </svg></button><button class="p-2 hover:rounded-md hover:bg-gray-200"><svg
+                                        width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6 fill-current">
+                                        <path
+                                            d="M6 8h12l-.893 11.615A1.5 1.5 0 0 1 15.61 21H8.389a1.5 1.5 0 0 1-1.496-1.385L6 8Zm2 2 .454 4.09 7.098-.056L16 10H8Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14 4.5v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1H5.5A.5.5 0 0 0 5 5v.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H14Z"
+                                            fill="currentColor"></path>
+                                    </svg></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition-colors group">
+                        <td class="flex gap-x-4 items-center py-4 pl-10"><input type="checkbox"
+                                class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"><img
+                                src="D:\Avllo\TailWind Css\img\traffic-landing-page.png" alt=""
+                                class="w-40 aspect-[3/2] rounded-lg object-cover object-top border border-gray-200">
+                            <div><a href="#" class="text-lg font-semibold text-gray-700">Traffic Landing page</a>
+                                <div class="font-medium text-gray-400">Web Design</div>
+                            </div>
+                        </td>
+                        <td class="font-medium text-center">$24</td>
+                        <td class="font-medium text-center">34</td>
+                        <td class="text-center"><span class="font-medium">4.4</span><span
+                                class="text-gray-400">/5</span></td>
+                        <td>
+                            <div class="flex gap-x-2 justify-center items-center"><a href="#"
+                                    class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                                        <path d="M21.333 21.333a5.333 5.333 0 1 0 0-10.666 5.333 5.333 0 0 0 0 10.666Z"
+                                            fill="#19BCFE"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 32A5.333 5.333 0 0 0 16 26.667v-5.334h-5.333a5.333 5.333 0 1 0 0 10.667Z"
+                                            fill="#09CF83"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 21.333H16V10.667h-5.333a5.333 5.333 0 1 0 0 10.666Z"
+                                            fill="#A259FF"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 10.667H16V0h-5.333a5.333 5.333 0 1 0 0 10.667Z" fill="#F24E1E">
+                                        </path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.333 10.667H16V0h5.333a5.333 5.333 0 1 1 0 10.667Z" fill="#FF7262">
+                                        </path>
+                                    </svg></a><a href="#" class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg
+                                        viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6">
+                                        <path d="M3.169 3.517h25.666v24.966H3.169V3.517Z" fill="#1C0A00"></path>
+                                        <path
+                                            d="M3.169 3.517h25.666v24.966H3.169V3.517ZM2 29.65h28V2.35H2v27.3Zm18.34-17.57c0-.093.035-.14.14-.14h1.832c.093 0 .14.035.14.14v9.205c0 .093-.023.14-.14.14h-1.807c-.117 0-.152-.058-.152-.152V12.08H20.34Zm-.128-2.648a1.19 1.19 0 0 1 2.38 0 1.116 1.116 0 0 1-1.213 1.19 1.099 1.099 0 0 1-1.165-1.19h-.002Zm-5.25 6.487c-.327-1.3-1.1-4.118-1.388-5.483h-.023c-.245 1.365-.863 3.675-1.353 5.483h2.764Zm-3.243 1.89-.922 3.5c-.023.093-.058.117-.175.117H8.909c-.117 0-.14-.035-.117-.175l3.313-11.6c.08-.316.12-.642.117-.968 0-.082.035-.117.093-.117h2.45c.082 0 .117.023.14.117l3.71 12.588c.023.093 0 .152-.093.152h-1.937c-.093 0-.152-.023-.175-.1l-.957-3.512H11.72l-.001-.002Z"
+                                            fill="#FF7F18"></path>
+                                    </svg></a></div>
+                        </td>
+                        <td><span class="inline-block w-20 group-hover:hidden">10/01/22</span>
+                            <div
+                                class="hidden group-hover:flex group-hover:w-20 group-hover:items-center group-hover:text-gray-500 group-hover:gap-x-2">
+                                <button class="p-2 hover:rounded-md hover:bg-gray-200"><svg width="24" height="24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
+                                        <path
+                                            d="m19.925 8.44-8.449 8.448a1.5 1.5 0 0 1-1.075.44l-3.523-.035a1.5 1.5 0 0 1-1.485-1.463l-.086-3.427a1.5 1.5 0 0 1 .439-1.098l8.522-8.522a1.5 1.5 0 0 1 2.121 0l3.536 3.535a1.5 1.5 0 0 1 0 2.121Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" d="M19 20H6a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2Z"
+                                            fill="currentColor"></path>
+                                    </svg></button><button class="p-2 hover:rounded-md hover:bg-gray-200"><svg
+                                        width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6 fill-current">
+                                        <path
+                                            d="M6 8h12l-.893 11.615A1.5 1.5 0 0 1 15.61 21H8.389a1.5 1.5 0 0 1-1.496-1.385L6 8Zm2 2 .454 4.09 7.098-.056L16 10H8Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14 4.5v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1H5.5A.5.5 0 0 0 5 5v.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H14Z"
+                                            fill="currentColor"></path>
+                                    </svg></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition-colors group">
+                        <td class="flex gap-x-4 items-center py-4 pl-10"><input type="checkbox"
+                                class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"><img
+                                src="D:\Avllo\TailWind Css\img\pos-dashboard.png" alt=""
+                                class="w-40 aspect-[3/2] rounded-lg object-cover object-top border border-gray-200">
+                            <div><a href="#" class="text-lg font-semibold text-gray-700">POS Dashboard</a>
+                                <div class="font-medium text-gray-400">Web Design</div>
+                            </div>
+                        </td>
+                        <td class="font-medium text-center">$16</td>
+                        <td class="font-medium text-center">896</td>
+                        <td class="text-center"><span class="font-medium">4.6</span><span
+                                class="text-gray-400">/5</span></td>
+                        <td>
+                            <div class="flex gap-x-2 justify-center items-center"><a href="#"
+                                    class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                                        <path d="M21.333 21.333a5.333 5.333 0 1 0 0-10.666 5.333 5.333 0 0 0 0 10.666Z"
+                                            fill="#19BCFE"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 32A5.333 5.333 0 0 0 16 26.667v-5.334h-5.333a5.333 5.333 0 1 0 0 10.667Z"
+                                            fill="#09CF83"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 21.333H16V10.667h-5.333a5.333 5.333 0 1 0 0 10.666Z"
+                                            fill="#A259FF"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 10.667H16V0h-5.333a5.333 5.333 0 1 0 0 10.667Z" fill="#F24E1E">
+                                        </path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.333 10.667H16V0h5.333a5.333 5.333 0 1 1 0 10.667Z" fill="#FF7262">
+                                        </path>
+                                    </svg></a><a href="#" class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg
+                                        viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6">
+                                        <path d="M8.109 4.26 16 3.433l7.891.828L30 12.4 16 28.567 2 12.4l6.109-8.14Z"
+                                            fill="#FDB300"></path>
+                                        <path
+                                            d="M7.671 12.395 16 28.567 2 12.395h5.671ZM24.329 12.395 16 28.567l14-16.172h-5.671Z"
+                                            fill="#EA6C00"></path>
+                                        <path d="M7.671 12.395h16.658L16 28.567 7.671 12.395Z" fill="#FDAD00">
+                                        </path>
+                                        <path
+                                            d="m16 3.433-7.891.827-.438 8.135L16 3.433ZM16 3.433l7.891.827.438 8.135L16 3.433Z"
+                                            fill="#FDD231"></path>
+                                        <path
+                                            d="M30 12.395 23.891 4.26l.438 8.135H30ZM2 12.395 8.109 4.26l-.438 8.135H2Z"
+                                            fill="#FDAD00"></path>
+                                        <path d="m16 3.433-8.329 8.962h16.658L16 3.433Z" fill="#FEEEB7"></path>
+                                    </svg></a></div>
+                        </td>
+                        <td><span class="inline-block w-20 group-hover:hidden">01/01/22</span>
+                            <div
+                                class="hidden group-hover:flex group-hover:w-20 group-hover:items-center group-hover:text-gray-500 group-hover:gap-x-2">
+                                <button class="p-2 hover:rounded-md hover:bg-gray-200"><svg width="24" height="24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
+                                        <path
+                                            d="m19.925 8.44-8.449 8.448a1.5 1.5 0 0 1-1.075.44l-3.523-.035a1.5 1.5 0 0 1-1.485-1.463l-.086-3.427a1.5 1.5 0 0 1 .439-1.098l8.522-8.522a1.5 1.5 0 0 1 2.121 0l3.536 3.535a1.5 1.5 0 0 1 0 2.121Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" d="M19 20H6a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2Z"
+                                            fill="currentColor"></path>
+                                    </svg></button><button class="p-2 hover:rounded-md hover:bg-gray-200"><svg
+                                        width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6 fill-current">
+                                        <path
+                                            d="M6 8h12l-.893 11.615A1.5 1.5 0 0 1 15.61 21H8.389a1.5 1.5 0 0 1-1.496-1.385L6 8Zm2 2 .454 4.09 7.098-.056L16 10H8Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14 4.5v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1H5.5A.5.5 0 0 0 5 5v.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H14Z"
+                                            fill="currentColor"></path>
+                                    </svg></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition-colors group">
+                        <td class="flex gap-x-4 items-center py-4 pl-10"><input type="checkbox"
+                                class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"><img
+                                src="D:\Avllo\TailWind Css\img\gallery-page.png" alt=""
+                                class="w-40 aspect-[3/2] rounded-lg object-cover object-top border border-gray-200">
+                            <div><a href="#" class="text-lg font-semibold text-gray-700">Gallery page</a>
+                                <div class="font-medium text-gray-400">Web Design</div>
+                            </div>
+                        </td>
+                        <td class="font-medium text-center">$38</td>
+                        <td class="font-medium text-center">194</td>
+                        <td class="text-center"><span class="font-medium">4.6</span><span
+                                class="text-gray-400">/5</span></td>
+                        <td>
+                            <div class="flex gap-x-2 justify-center items-center"><a href="#"
+                                    class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                                        <path d="M21.333 21.333a5.333 5.333 0 1 0 0-10.666 5.333 5.333 0 0 0 0 10.666Z"
+                                            fill="#19BCFE"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 32A5.333 5.333 0 0 0 16 26.667v-5.334h-5.333a5.333 5.333 0 1 0 0 10.667Z"
+                                            fill="#09CF83"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 21.333H16V10.667h-5.333a5.333 5.333 0 1 0 0 10.666Z"
+                                            fill="#A259FF"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 10.667H16V0h-5.333a5.333 5.333 0 1 0 0 10.667Z" fill="#F24E1E">
+                                        </path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.333 10.667H16V0h5.333a5.333 5.333 0 1 1 0 10.667Z" fill="#FF7262">
+                                        </path>
+                                    </svg></a><a href="#" class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg
+                                        viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6">
+                                        <path d="M8.109 4.26 16 3.433l7.891.828L30 12.4 16 28.567 2 12.4l6.109-8.14Z"
+                                            fill="#FDB300"></path>
+                                        <path
+                                            d="M7.671 12.395 16 28.567 2 12.395h5.671ZM24.329 12.395 16 28.567l14-16.172h-5.671Z"
+                                            fill="#EA6C00"></path>
+                                        <path d="M7.671 12.395h16.658L16 28.567 7.671 12.395Z" fill="#FDAD00">
+                                        </path>
+                                        <path
+                                            d="m16 3.433-7.891.827-.438 8.135L16 3.433ZM16 3.433l7.891.827.438 8.135L16 3.433Z"
+                                            fill="#FDD231"></path>
+                                        <path
+                                            d="M30 12.395 23.891 4.26l.438 8.135H30ZM2 12.395 8.109 4.26l-.438 8.135H2Z"
+                                            fill="#FDAD00"></path>
+                                        <path d="m16 3.433-8.329 8.962h16.658L16 3.433Z" fill="#FEEEB7"></path>
+                                    </svg></a></div>
+                        </td>
+                        <td><span class="inline-block w-20 group-hover:hidden">04/01/22</span>
+                            <div
+                                class="hidden group-hover:flex group-hover:w-20 group-hover:items-center group-hover:text-gray-500 group-hover:gap-x-2">
+                                <button class="p-2 hover:rounded-md hover:bg-gray-200"><svg width="24" height="24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
+                                        <path
+                                            d="m19.925 8.44-8.449 8.448a1.5 1.5 0 0 1-1.075.44l-3.523-.035a1.5 1.5 0 0 1-1.485-1.463l-.086-3.427a1.5 1.5 0 0 1 .439-1.098l8.522-8.522a1.5 1.5 0 0 1 2.121 0l3.536 3.535a1.5 1.5 0 0 1 0 2.121Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" d="M19 20H6a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2Z"
+                                            fill="currentColor"></path>
+                                    </svg></button><button class="p-2 hover:rounded-md hover:bg-gray-200"><svg
+                                        width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6 fill-current">
+                                        <path
+                                            d="M6 8h12l-.893 11.615A1.5 1.5 0 0 1 15.61 21H8.389a1.5 1.5 0 0 1-1.496-1.385L6 8Zm2 2 .454 4.09 7.098-.056L16 10H8Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14 4.5v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1H5.5A.5.5 0 0 0 5 5v.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H14Z"
+                                            fill="currentColor"></path>
+                                    </svg></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition-colors group">
+                        <td class="flex gap-x-4 items-center py-4 pl-10"><input type="checkbox"
+                                class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"><img
+                                src="D:\Avllo\TailWind Css\img\wfh-landing-page.png" alt=""
+                                class="w-40 aspect-[3/2] rounded-lg object-cover object-top border border-gray-200">
+                            <div><a href="#" class="text-lg font-semibold text-gray-700">WFH Landing page</a>
+                                <div class="font-medium text-gray-400">Web Design</div>
+                            </div>
+                        </td>
+                        <td class="font-medium text-center">$22</td>
+                        <td class="font-medium text-center">404</td>
+                        <td class="text-center"><span class="font-medium">4.3</span><span
+                                class="text-gray-400">/5</span></td>
+                        <td>
+                            <div class="flex gap-x-2 justify-center items-center"><a href="#"
+                                    class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg viewBox="0 0 32 32"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                                        <path d="M21.333 21.333a5.333 5.333 0 1 0 0-10.666 5.333 5.333 0 0 0 0 10.666Z"
+                                            fill="#19BCFE"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 32A5.333 5.333 0 0 0 16 26.667v-5.334h-5.333a5.333 5.333 0 1 0 0 10.667Z"
+                                            fill="#09CF83"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 21.333H16V10.667h-5.333a5.333 5.333 0 1 0 0 10.666Z"
+                                            fill="#A259FF"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.667 10.667H16V0h-5.333a5.333 5.333 0 1 0 0 10.667Z" fill="#F24E1E">
+                                        </path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.333 10.667H16V0h5.333a5.333 5.333 0 1 1 0 10.667Z" fill="#FF7262">
+                                        </path>
+                                    </svg></a><a href="#" class="p-2 bg-gray-200 rounded-md hover:bg-gray-300"><svg
+                                        viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6">
+                                        <path d="M8.109 4.26 16 3.433l7.891.828L30 12.4 16 28.567 2 12.4l6.109-8.14Z"
+                                            fill="#FDB300"></path>
+                                        <path
+                                            d="M7.671 12.395 16 28.567 2 12.395h5.671ZM24.329 12.395 16 28.567l14-16.172h-5.671Z"
+                                            fill="#EA6C00"></path>
+                                        <path d="M7.671 12.395h16.658L16 28.567 7.671 12.395Z" fill="#FDAD00">
+                                        </path>
+                                        <path
+                                            d="m16 3.433-7.891.827-.438 8.135L16 3.433ZM16 3.433l7.891.827.438 8.135L16 3.433Z"
+                                            fill="#FDD231"></path>
+                                        <path
+                                            d="M30 12.395 23.891 4.26l.438 8.135H30ZM2 12.395 8.109 4.26l-.438 8.135H2Z"
+                                            fill="#FDAD00"></path>
+                                        <path d="m16 3.433-8.329 8.962h16.658L16 3.433Z" fill="#FEEEB7"></path>
+                                    </svg></a></div>
+                        </td>
+                        <td><span class="inline-block w-20 group-hover:hidden">12/12/21</span>
+                            <div
+                                class="hidden group-hover:flex group-hover:w-20 group-hover:items-center group-hover:text-gray-500 group-hover:gap-x-2">
+                                <button class="p-2 hover:rounded-md hover:bg-gray-200"><svg width="24" height="24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
+                                        <path
+                                            d="m19.925 8.44-8.449 8.448a1.5 1.5 0 0 1-1.075.44l-3.523-.035a1.5 1.5 0 0 1-1.485-1.463l-.086-3.427a1.5 1.5 0 0 1 .439-1.098l8.522-8.522a1.5 1.5 0 0 1 2.121 0l3.536 3.535a1.5 1.5 0 0 1 0 2.121Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" d="M19 20H6a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2Z"
+                                            fill="currentColor"></path>
+                                    </svg></button><button class="p-2 hover:rounded-md hover:bg-gray-200"><svg
+                                        width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="w-6 h-6 fill-current">
+                                        <path
+                                            d="M6 8h12l-.893 11.615A1.5 1.5 0 0 1 15.61 21H8.389a1.5 1.5 0 0 1-1.496-1.385L6 8Zm2 2 .454 4.09 7.098-.056L16 10H8Z"
+                                            fill="currentColor"></path>
+                                        <path opacity=".3" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14 4.5v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1H5.5A.5.5 0 0 0 5 5v.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H14Z"
+                                            fill="currentColor"></path>
+                                    </svg></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="flex gap-x-2 justify-center pt-8"><button class="flex justify-center items-center w-8 h-8"><svg
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 h-6 to-gray-800 stroke-current hover:text-indigo-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7">
+                        </path>
+                    </svg></button><button
+                    class="flex items-center justify-center w-8 h-8 font-medium rounded-full bg-gray-800 text-white">1</button><button
+                    class="flex items-center justify-center w-8 h-8 font-medium rounded-full text-gray-400 hover:text-indigo-600">2</button><button
+                    class="flex items-center justify-center w-8 h-8 font-medium rounded-full text-gray-400 hover:text-indigo-600">3</button><button
+                    class="flex items-center justify-center w-8 h-8 font-medium rounded-full text-gray-400 hover:text-indigo-600">4</button><button
+                    class="flex items-center justify-center w-8 h-8 font-medium rounded-full text-gray-400 hover:text-indigo-600">5</button><button
+                    class="flex items-center justify-center w-8 h-8 font-medium rounded-full text-gray-400 hover:text-indigo-600">6</button><button
+                    class="flex justify-center items-center w-8 h-8"><svg fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 h-6 to-gray-800 stroke-current hover:text-indigo-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7">
+                        </path>
+                    </svg></button></div>
+        </main>
+
+        <!-- END OF MAIN -->
+
+    </div>
+
+    <!-- JS SCRIPT -->
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
